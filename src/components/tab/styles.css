@@ -1,0 +1,29 @@
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    --color: var(--pagetitles);
+    gap:2px;
+}
+
+.wrapper:hover {
+    --color: var(--pagetitles-hover);
+}
+.wrapper:active {
+    --color: var(--pagetitles-active);
+}
+
+.wrapper .name {
+    width: 100%;
+    line-height: 100%;
+    text-align: center;
+    transition: all 0.1s linear;
+    color: var(--color);
+}
+.wrapper .underline {
+    height: 2px;
+    transition: all 0.1s linear;
+    background-color: var(--color);
+}
