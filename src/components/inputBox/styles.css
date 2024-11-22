@@ -1,0 +1,18 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--textboxfront);
+    color: var(--insidetext);
+    line-height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.box::placeholder {
+    color: var(--inputtext);
+    
+}
