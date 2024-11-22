@@ -1,0 +1,21 @@
+.info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: color-mix(in srgb, var(--textboxback) 70%, transparent);
+    padding: 20px;
+    border-radius: 15px;
+
+}
+
+.pageTitle {
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    line-height: 100%;
+    color: var(--text);
+    margin-bottom: 20px;
+}
