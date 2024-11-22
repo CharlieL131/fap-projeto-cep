@@ -1,0 +1,32 @@
+
+.page {
+    min-height: max(100vh, 1000px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.content {
+    flex: 1;
+    position: "relative";
+    padding: 200px 800px 0px 100px;
+    display: flex;
+    align-items: center;
+}
+
+.page::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: max(100vh, 1000px);
+    width: 100wh;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("/pattern-7932239_1280.png");
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: 20%;
+    filter: opacity(50%) hue-rotate(295deg) saturate(170%) sepia(42%);
+}
