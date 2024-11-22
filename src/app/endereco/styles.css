@@ -4,7 +4,14 @@
     display: flex;
     flex-direction: column;
     position: relative;
+}
 
+.content {
+    flex: 1;
+    position: "relative";
+    padding: 200px 800px 0px 100px;
+    display: flex;
+    align-items: center;
 }
 
 .page::before {
@@ -22,4 +29,14 @@
     background-position: 0 0;
     background-size: 20%;
     filter: opacity(50%) hue-rotate(295deg) saturate(170%) sepia(42%);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+    width: 100%;
+    gap: 10px;
 }

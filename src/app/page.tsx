@@ -1,3 +1,5 @@
+"use client"
+
 import "./styles.css"
 import Header from "@/components/header";
 import Tab from "@/components/tab";

@@ -27,4 +27,5 @@
     text-wrap: wrap;
     flex: 1;
     font-size: 22px;
+    min-height: 40px;
 }
