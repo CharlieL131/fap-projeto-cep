@@ -22,7 +22,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`antialiased`}>
+      <body className={`antialiased`} style={{minHeight:"100vh", display:"flex", flexDirection: "column", backgroundColor: "var(--background)"}}>
         <AnimatePresence>
           {children}
         </AnimatePresence>
