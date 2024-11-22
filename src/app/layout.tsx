@@ -3,6 +3,7 @@
 import { AnimatePresence } from "motion/react"
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { AddrProvider } from "@/contexts/addrContext";
 import "./globals.css";
 
 
@@ -23,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`} style={{minHeight:"100vh", display:"flex", flexDirection: "column", backgroundColor: "var(--background)"}}>
-        <AnimatePresence>
-          {children}
-        </AnimatePresence>
+        <AddrProvider>
+          <AnimatePresence>
+            {children}
+          </AnimatePresence>
+        </AddrProvider>
       </body>
     </html>
   );
