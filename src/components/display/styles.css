@@ -1,0 +1,30 @@
+.display-box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    line-height: 100%;
+}
+  
+.display-box .text-wrapper {
+    color: var(--text);
+    font-size: 24px;
+    width: fit-content;
+}
+  
+.display-box .value-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    color: var(--insidetext);
+    background-color: var(--textboxfront);
+    padding: 12px 30px;
+    border-radius: 10px;
+    text-wrap: wrap;
+    flex: 1;
+    font-size: 22px;
+}
